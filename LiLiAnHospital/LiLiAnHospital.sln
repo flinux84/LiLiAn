@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "LiLiAnHospital", "LiLiAnHospital\LiLiAnHospital.sqlproj", "{9DED1BCA-7A91-4343-AB16-642C267AF467}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Hospital_LiLiAn", "LiLiAnHospital\Hospital_LiLiAn.sqlproj", "{9DED1BCA-7A91-4343-AB16-642C267AF467}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

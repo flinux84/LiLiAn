@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>LiLiAnHospital</Name>
+    <Name>Hospital_LiLiAn</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{9ded1bca-7a91-4343-ab16-642c267af467}</ProjectGuid>
@@ -60,5 +60,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Test.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ListAllFarm.cs" />
   </ItemGroup>
 </Project>
