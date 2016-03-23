@@ -59,7 +59,7 @@
     <Folder Include="Properties" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Test.sql" />
+    <None Include="LinusSQLinjector.sql" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -68,5 +68,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ListAllFarm.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Farmaceutical.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Hospital_LiLiAn.refactorlog" />
   </ItemGroup>
 </Project>

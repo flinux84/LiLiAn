@@ -1,1 +1,0 @@
-﻿this is a empty SQL-file for testing pure SQL queries
