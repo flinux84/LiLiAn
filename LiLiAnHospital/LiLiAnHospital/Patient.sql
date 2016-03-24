@@ -7,5 +7,7 @@
     [controlDigits] NCHAR(4) NOT NULL,
     [medicalSymptom] NVARCHAR(100) NULL, 
     [roomID] INT NULL, 
-    [diagnoseID] INT NULL
+    [diagnoseID] INT NULL, 
+    CONSTRAINT [FK_Patient_Room] FOREIGN KEY ([roomID]) REFERENCES [Room]([roomID]), 
+    CONSTRAINT [FK_Patient_Diagnose] FOREIGN KEY ([diagnoseID]) REFERENCES [Diagnose]([diagnoseID])
 )
