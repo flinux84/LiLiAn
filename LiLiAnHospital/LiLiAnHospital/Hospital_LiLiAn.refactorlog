@@ -21,4 +21,25 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="patientID" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="a56b6307-c680-4a1e-8f8f-fbb9f7f1ac7c" ChangeDateTime="03/24/2016 13:04:32">
+    <Property Name="ElementName" Value="[dbo].[Patient].[controlNumber]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Patient]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="controlDigits" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ef6d524b-959a-400e-9b8d-da55314d6e8d" ChangeDateTime="03/24/2016 13:04:41">
+    <Property Name="ElementName" Value="[dbo].[Doctor].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Doctor]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="doctorID" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c8d87d7b-162f-4f36-8f4f-a7b1f83a380d" ChangeDateTime="03/24/2016 13:12:46">
+    <Property Name="ElementName" Value="[dbo].[Nurse].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Nurse]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="nurseID" />
+  </Operation>
 </Operations>

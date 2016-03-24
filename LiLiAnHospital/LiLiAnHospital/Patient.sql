@@ -7,5 +7,5 @@
     [roomID] INT NULL, 
     [diagnoseID] INT NULL, 
     [birthDate] DATE NOT NULL, 
-    [controlNumber] NCHAR(4) NOT NULL
+    [controlDigits] NCHAR(4) NOT NULL
 )
