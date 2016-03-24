@@ -80,6 +80,7 @@
     <Build Include="Doctor.sql" />
     <Build Include="Nurse.sql" />
     <Build Include="Diagnose.sql" />
+    <Build Include="Treatment.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Hospital_LiLiAn.refactorlog" />

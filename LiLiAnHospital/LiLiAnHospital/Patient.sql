@@ -8,6 +8,8 @@
     [medicalSymptom] NVARCHAR(100) NULL, 
     [roomID] INT NULL, 
     [diagnoseID] INT NULL, 
+    [treatmentID] INT NULL, 
     CONSTRAINT [FK_Patient_Room] FOREIGN KEY ([roomID]) REFERENCES [Room]([roomID]), 
-    CONSTRAINT [FK_Patient_Diagnose] FOREIGN KEY ([diagnoseID]) REFERENCES [Diagnose]([diagnoseID])
+    CONSTRAINT [FK_Patient_Diagnose] FOREIGN KEY ([diagnoseID]) REFERENCES [Diagnose]([diagnoseID]), 
+    CONSTRAINT [FK_Patient_Treatment] FOREIGN KEY ([treatmentID]) REFERENCES [Treatment]([treatmentID])
 )
