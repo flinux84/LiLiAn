@@ -57,6 +57,7 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="CLRstoredProcedures" />
   </ItemGroup>
   <ItemGroup>
     <None Include="LinusSQLinjector.sql" />
@@ -67,9 +68,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ListAllFarm.cs" />
-    <Compile Include="spListDepartments.cs" />
-    <Compile Include="spGetAvailableRoomsInDepartment.cs" />
+    <Compile Include="CLRstoredProcedures\spListAllFarm.cs" />
+    <Compile Include="CLRstoredProcedures\spGetAvailableRoomsInDepartment.cs" />
+    <Compile Include="CLRstoredProcedures\spListDepartments.cs" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Farmaceutical.sql" />
