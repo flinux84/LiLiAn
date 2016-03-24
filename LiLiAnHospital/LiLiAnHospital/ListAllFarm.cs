@@ -9,7 +9,19 @@ public partial class StoredProcedures
     [Microsoft.SqlServer.Server.SqlProcedure]
     public static void ListAllFarm ()
     {
-        SqlContext.Pipe.Send("This is my CLR SP Test crazy shit test CLR object stored procedure");
+        string storedProcedure =
+            @"SELECT brand
+            FROM Farmaceutical
+            WHERE brand='Complera';";
+
+        SqlCommand sq = new SqlCommand(storedProcedure);
+        SqlContext.Pipe.ExecuteAndSend(sq);
+        
+        //SqlDataReader reader = sq.ExecuteReader();
+        //using(reader) {
+        //    while (reader.Read())
+        //        SqlContext.Pipe.Send(reader.GetSqlValue(0).ToString());
+        //}
         // Put your code here
     }
 }
