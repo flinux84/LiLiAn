@@ -75,6 +75,7 @@
     <Build Include="Farmaceutical.sql" />
     <Build Include="Department.sql" />
     <Build Include="Patient.sql" />
+    <Build Include="Room.sql" />
     <Build Include="Doctor.sql" />
     <Build Include="Nurse.sql" />
   </ItemGroup>
