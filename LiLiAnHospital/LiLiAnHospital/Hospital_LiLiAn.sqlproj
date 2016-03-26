@@ -60,9 +60,6 @@
     <Folder Include="CLRstoredProcedures" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="LinusSQLinjector.sql" />
-  </ItemGroup>
-  <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -71,6 +68,8 @@
     <Compile Include="CLRstoredProcedures\spListAllFarm.cs" />
     <Compile Include="CLRstoredProcedures\spGetAvailableRoomsInDepartment.cs" />
     <Compile Include="CLRstoredProcedures\spListDepartments.cs" />
+    <Compile Include="CLRstoredProcedures\spHospitalizedDiagnosedTreatment.cs" />
+    <Compile Include="CLRstoredProcedures\spHospitalizedNoDiagnoseOrTreatment.cs" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Farmaceutical.sql" />
@@ -81,6 +80,7 @@
     <Build Include="Nurse.sql" />
     <Build Include="Diagnose.sql" />
     <Build Include="Treatment.sql" />
+    <Build Include="SQLTest.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Hospital_LiLiAn.refactorlog" />
