@@ -22,7 +22,14 @@ public partial class StoredProcedures
         LEFT OUTER JOIN Diagnose AS Dia ON P.diagnoseID = Dia.diagnoseID
         WHERE P.diagnoseID IS NULL OR P.treatmentID IS NULL;";
 
-        SqlCommand sq = new SqlCommand(sqlselect);
-        SqlContext.Pipe.ExecuteAndSend(sq);
+        //SqlCommand sq = new SqlCommand(sqlselect);
+        //SqlContext.Pipe.ExecuteAndSend(sq);
+        using (SqlConnection connection = new SqlConnection("context connection=true"))
+        {
+            connection.Open();
+            SqlCommand command = new SqlCommand(sqlselect, connection);
+            SqlDataReader r = command.ExecuteReader();
+            SqlContext.Pipe.Send(r);
+        }
     }
 }

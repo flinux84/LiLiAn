@@ -70,6 +70,8 @@
     <Compile Include="CLRstoredProcedures\spListDepartments.cs" />
     <Compile Include="CLRstoredProcedures\spHospitalizedDiagnosedTreatment.cs" />
     <Compile Include="CLRstoredProcedures\spHospitalizedNoDiagnoseOrTreatment.cs" />
+    <Compile Include="CLRstoredProcedures\spNotHospitalizedNoDiagnoseOrTreatment.cs" />
+    <Compile Include="CLRstoredProcedures\spNotHospitalizedDiagnosedTreatment.cs" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Farmaceutical.sql" />
