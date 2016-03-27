@@ -66,12 +66,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CLRstoredProcedures\spListAllFarm.cs" />
-    <Compile Include="CLRstoredProcedures\spGetAvailableRoomsInDepartment.cs" />
+    <Compile Include="CLRstoredProcedures\spAvailableRoomsInDepartment.cs" />
     <Compile Include="CLRstoredProcedures\spListDepartments.cs" />
     <Compile Include="CLRstoredProcedures\spHospitalizedDiagnosedTreatment.cs" />
     <Compile Include="CLRstoredProcedures\spHospitalizedNoDiagnoseOrTreatment.cs" />
     <Compile Include="CLRstoredProcedures\spNotHospitalizedNoDiagnoseOrTreatment.cs" />
     <Compile Include="CLRstoredProcedures\spNotHospitalizedDiagnosedTreatment.cs" />
+    <Compile Include="CLRstoredProcedures\spAllAvailableRooms.cs" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Farmaceutical.sql" />
