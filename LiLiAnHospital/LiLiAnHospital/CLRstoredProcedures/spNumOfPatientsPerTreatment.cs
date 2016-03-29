@@ -30,8 +30,6 @@ public partial class StoredProcedures
             connection.Open();
             SqlCommand command = new SqlCommand(sqlselect, connection);
             SqlContext.Pipe.ExecuteAndSend(command);
-            //SqlDataReader r = command.ExecuteReader();
-            //SqlContext.Pipe.Send(r);
         }
     }
 }
