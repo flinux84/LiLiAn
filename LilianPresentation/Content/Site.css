@@ -16,6 +16,8 @@ input,
 select,
 textarea {
     max-width: 280px;
+    height: 41px;
+    width: 197px;
 }
 
 /* Responsive: Portrait tablets and up */
