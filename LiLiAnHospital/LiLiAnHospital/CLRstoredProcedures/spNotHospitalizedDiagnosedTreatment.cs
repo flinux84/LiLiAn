@@ -10,7 +10,6 @@ public partial class StoredProcedures
     public static void spNotHospitalizedDiagnosedTreatment ()
     {
         string sqlselect = @"SELECT CONCAT(P.firstName, P.lastName) AS 'Full Name',
-                            P.medicalSymptom AS 'Patients symptoms',
                             P.birthDate AS 'Date of birth',
                             P.medicalSymptom AS 'Patients symptoms',
                             Dia.diagnoseName AS Diagnose,
