@@ -73,6 +73,7 @@
     <Compile Include="CLRstoredProcedures\spNotHospitalizedDiagnosedTreatment.cs" />
     <Compile Include="CLRstoredProcedures\spAllAvailableRooms.cs" />
     <Compile Include="CLRstoredProcedures\spAvailableRoomsInDepartment.cs" />
+    <Compile Include="CLRstoredProcedures\spNumOfPatientsPerTreatment.cs" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Farmaceutical.sql" />
