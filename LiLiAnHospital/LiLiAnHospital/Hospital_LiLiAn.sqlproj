@@ -63,6 +63,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CLRstoredProcedures\spListAllFarm.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="CLRstoredProcedures\spAllAvailableRooms.cs" />
     <Compile Include="CLRstoredProcedures\spAvailableRoomsInDepartment.cs" />
     <Compile Include="CLRstoredProcedures\spNumOfPatientsPerTreatment.cs" />
+    <Compile Include="CLRstoredProcedures\spDoctorsBornAfter.cs" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Farmaceutical.sql" />

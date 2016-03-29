@@ -12,6 +12,7 @@ public partial class StoredProcedures {
 
         SqlParameter departmentParameter = new SqlParameter("@departmentName", SqlString.Null);
         departmentParameter.Value = departmentName;
+        departmentParameter.Direction = ParameterDirection.Input;
 
         string procedureText =
             @"
