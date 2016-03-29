@@ -88,4 +88,7 @@
   <ItemGroup>
     <RefactorLog Include="Hospital_LiLiAn.refactorlog" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Hospital_LiLiAn.publish.xml" />
+  </ItemGroup>
 </Project>
