@@ -16,7 +16,7 @@ public partial class StoredProcedures
         diagnoseName AS Diagnose,
         T.primaryTreatment AS 'Primary Treatment'
         FROM Patient AS P
-        RIGHT OUTER JOIN Room AS R ON P.roomID = R.roomID
+        LEFT OUTER JOIN Room AS R ON P.roomID = R.roomID
         INNER JOIN Department AS D ON R.departmentID = D.departmentID
         LEFT OUTER JOIN Treatment AS T ON P.treatmentID = T.treatmentID
         LEFT OUTER JOIN Diagnose AS Dia ON P.diagnoseID = Dia.diagnoseID

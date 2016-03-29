@@ -13,5 +13,7 @@
 
     <asp:SqlDataSource ID="HospitalizedButNoDiagnose" runat="server" ConnectionString="<%$ ConnectionStrings:Hospital_LiLiAnConnectionString %>" SelectCommand="spHospitalizedNoDiagnoseOrTreatment" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
 
-    <p>&nbsp;</p>
+    <p>
+
+    </p>
 </asp:Content>
