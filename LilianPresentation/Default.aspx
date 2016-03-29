@@ -18,7 +18,7 @@
                     <asp:ListItem Text="Treatments" Value="Treatment"></asp:ListItem>
             </asp:DropDownList>
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Hospital_LiLiAnConnectionString %>" SelectCommand="spListDepartments" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
-                <asp:GridView ID="GridView2" runat="server" Font-Size="Small" OnSelectedIndexChanged="GridView2_SelectedIndexChanged">
+                <asp:GridView ID="GridView2" runat="server" Font-Size="Small">
                 </asp:GridView>
             
          
