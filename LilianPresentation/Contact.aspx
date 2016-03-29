@@ -8,11 +8,11 @@
     </p>
     <p>&nbsp;</p>
 
-    <asp:SqlDataSource ID="spDataSourceDoctorsAge" runat="server" ConnectionString="<%$ ConnectionStrings:Hospital_LiLiAnConnectionString %>" OnSelecting="spDataSourceDoctorsAge_Selecting" SelectCommand="spDoctorsBornAfter" SelectCommandType="StoredProcedure">
+    <asp:SqlDataSource ID="spDataSourceDoctorsAge" runat="server" ConnectionString="<%$ ConnectionStrings:Hospital_LiLiAnConnectionString %>" SelectCommand="spDoctorsBornAfter" SelectCommandType="StoredProcedure">
         <SelectParameters>
-            <asp:FormParameter DefaultValue="1980-02-02" FormField="bornAfterDate" Name="bornAfterDate" Type="DateTime" />
+            <asp:ControlParameter ControlID="bornAfterDate" DefaultValue="1980-02-02" Name="bornAfterDate" PropertyName="Text" Size="200" Type="DateTime" />
         </SelectParameters>
     </asp:SqlDataSource>
-    <input id="Text1" type="text" />
+    <asp:TextBox ID="bornAfterDate" runat="server"  TextMode="Date" Height="80px" Width="307px"></asp:TextBox>
 
 </asp:Content>

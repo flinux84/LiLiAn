@@ -15,6 +15,8 @@ public partial class Contact : Page
     protected void Page_Load(object sender, EventArgs e)
     {
         GetTreatments();
+        GetDoctors();
+
     }
     protected void GetTreatments()
     {
@@ -33,12 +35,27 @@ public partial class Contact : Page
         TextBox.TextMode = TextBoxMode.MultiLine;
         TextBox.Text = stringbuilder.ToString();
     }
+
+    protected void GetDoctors() {
+        //SqlConnection conn = new SqlConnection(@"Data Source = 85.24.164.27; Initial Catalog = Hospital_LiLiAn; Persist Security Info = True; User ID = sa; Password = isabell");
+
+        //conn.Open();
+
+        //SqlCommand cmd = new SqlCommand("spDoctorsBornAfter", conn);
+        //cmd.CommandType = CommandType.StoredProcedure;
+        //SqlParameter sqlp = new SqlParameter("@bornAfterDate", SqlDbType.Date);
+        
+        
+
+        //cmd.ExecuteNonQuery();
+
+
+        
+    }
+
     void cn_InfoMessage(object sender, SqlInfoMessageEventArgs e)
     {
         stringbuilder.AppendLine(e.Message);
     }
 
-    protected void spDataSourceDoctorsAge_Selecting(object sender, SqlDataSourceSelectingEventArgs e) {
-
-    }
 }
