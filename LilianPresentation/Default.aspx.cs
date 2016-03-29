@@ -28,6 +28,7 @@ public partial class _Default : Page
 
             GridView2.DataSource = dt;
             GridView2.DataBind();
+            GridView2.AllowPaging = true;
         }
     }
 }
