@@ -23,7 +23,7 @@ public partial class StoredProcedures
 		                            SET @numOfPatients = (SELECT COUNT(*) FROM Patient WHERE Patient.treatmentID = @counter)
 		                            PRINT @treatmentName + ' treatment for ' + CAST(@numOfPatients AS VARCHAR(3)) + ' patients'
 		                            SET @counter += 1
-	                            END;";
+	                            END";
 
         using (SqlConnection connection = new SqlConnection("context connection=true"))
         {
