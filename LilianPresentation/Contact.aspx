@@ -1,18 +1,27 @@
 ﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="Contact.aspx.cs" Inherits="Contact" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <p><asp:SqlDataSource ID="countTreatments" runat="server"></asp:SqlDataSource>
-        <asp:TextBox ID="TextBox" runat="server" ReadOnly="True" OnDataBinding="Page_Load" Height="241px" TextMode="MultiLine" Width="759px"></asp:TextBox>
-        <asp:GridView ID="GridView1" runat="server" DataSourceID="spDataSourceDoctorsAge">
-        </asp:GridView>
-    </p>
-    <p>&nbsp;</p>
+    <h2>More StoredProcedures</h2>
+    <asp:SqlDataSource ID="countTreatments" runat="server"></asp:SqlDataSource>
+        <p>Number of patients in treatment</p>
 
-    <asp:SqlDataSource ID="spDataSourceDoctorsAge" runat="server" ConnectionString="<%$ ConnectionStrings:Hospital_LiLiAnConnectionString %>" SelectCommand="spDoctorsBornAfter" SelectCommandType="StoredProcedure">
-        <SelectParameters>
-            <asp:ControlParameter ControlID="bornAfterDate" DefaultValue="1980-02-02" Name="bornAfterDate" PropertyName="Text" Size="200" Type="DateTime" />
-        </SelectParameters>
-    </asp:SqlDataSource>
-    <asp:TextBox ID="bornAfterDate" runat="server"  TextMode="Date" Height="80px" Width="307px"></asp:TextBox>
-
+        <asp:TextBox ID="TextBox" runat="server" ReadOnly="True" OnDataBinding="Page_Load" Height="200px" TextMode="MultiLine" Width="490px"></asp:TextBox>
+        
+    <br />
+    <p>Patients not hospitalized but diagnosed with treatment<br /></p>
+    <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" CellPadding="4" DataSourceID="notHospitalizedButTreated" ForeColor="#333333" GridLines="None" PageSize="20">
+        <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+        <EditRowStyle BackColor="#999999" />
+        <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+        <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+        <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
+        <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+        <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
+        <SortedAscendingCellStyle BackColor="#E9E7E2" />
+        <SortedAscendingHeaderStyle BackColor="#506C8C" />
+        <SortedDescendingCellStyle BackColor="#FFFDF8" />
+        <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
+    </asp:GridView>
+    <asp:SqlDataSource ID="notHospitalizedButTreated" runat="server" ConnectionString="<%$ ConnectionStrings:Hospital_LiLiAnConnectionString %>" SelectCommand="spNotHospitalizedDiagnosedTreatment" SelectCommandType="StoredProcedure"></asp:SqlDataSource>
+        
 </asp:Content>
