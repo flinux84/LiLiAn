@@ -8,7 +8,7 @@ public partial class StoredProcedures
 {
     /* List all rooms with free beds  */
     [Microsoft.SqlServer.Server.SqlProcedure]
-    public static void spAllAvailableRooms ()
+    public static void spAllAvailableRooms()
     {
         string procedureText =
             @"
